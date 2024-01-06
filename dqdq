@@ -20,15 +20,15 @@ getgenv().Setting = {
     }, 
     ["Panel"] = false,
     ["FpsBoost"] = {
-        Enable = true,
+        Enable = false,
         Mode = "Lite",--Lite: Just Lower Graphics, Full: Completely Make All Objects Transparent
     },
-    ["Hide Theme"] = false,
+    ["Hide Theme"] = true,
     ["3D Render Disable"] = true,
     ["Theme"] = {
-        ["Name"] = "Hutao",--"Old", "Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+        ["Name"] = "Miko",--"Old", "Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
         ["Custom"] = {
-            ["Enable"] = true,
+            ["Enable"] = false,
             ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
             ['char_pos'] = UDim2.new(0.463, 0, -0.105, 0),
             ['title_color'] = Color3.fromRGB(255, 221, 252),
@@ -57,19 +57,19 @@ getgenv().Setting = {
     },
     ["Auto Use Race V4"] = true, -- No Way you are turning this off
     ["Auto Dash If Mink V4"] = false,
-    ["Auto Dash If Ghoul V4"] = true,
-    ["Spam All Skill On Race Transform V4"] = true,
+    ["Auto Dash If Ghoul V4"] = false,
+    ["Spam All Skill On Race Transform V4"] = false,
     ["Failed To Load Data"] = {
         Rejoin = true,
         TimeToCheck = 30,
     },
     ["Detect KeyWords"] = { -- If There Is A Person Says A Key Word In Chat, It Will Stop Auto Bounty And  Server Hop
-        Enable = true,
+        Enable = false,
         Words = { "Hacker", "Exploiter", "Scripter", "Script", "Hack"}
     },
     AutoConfigMelee = true,
-    AutoConfigSword = true,
-    AutoConfigFruit = true,
+    AutoConfigSword = false,
+    AutoConfigFruit = false,
     SwitchPlayerKeybind = "G", -- Except Y Keybind
     ["LimitServerHopTime"] ={ -- Only Hop After "Time" Seconds
         Enable = false,
@@ -92,7 +92,7 @@ getgenv().Setting = {
         }
     },
     ["ChatKill"] = {
-        Enable = false,
+        Enable = true,
         Chat = {
             "Go Buy W-azure Now","I Got A Gaming Chair","I'm Just Too Good"
         },
@@ -115,7 +115,7 @@ getgenv().Setting = {
     },
     ["Click"] = {
         ["Enable"] = true,
-        ["FastClick"] = false,
+        ["FastClick"] = true,
         ["OnLowHealthDisable"] = false,
         ["LowHealth"] = 3000,
     },
@@ -137,15 +137,15 @@ getgenv().Setting = {
         CustomIcon = false,
         Image = "sticker.png", -- The Path Is: W-azure/AutoBounty/Notify
     },
-    ["SpamSkill"] = true, -- Will use all skills as fast as possbile ignore holding skills
+    ["SpamSkill"] = false, -- Will use all skills as fast as possbile ignore holding skills
     ["Weapons"] = { -- Select Weapon, Self Explain
         ["Melee"] = {
             ["Enable"] = true,
-            ["Delay"] = 2,
+            ["Delay"] = 3,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["HoldTime"] = 1.5,
                     ["TimeToNextSkill"] = 0,
                 },
             [ "X"] = {
@@ -163,7 +163,7 @@ getgenv().Setting = {
         },
         ["Blox Fruit"] = {
             ["Enable"] = false,
-            ["Delay"] = 2.5,
+            ["Delay"] = 4,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
@@ -194,33 +194,33 @@ getgenv().Setting = {
             },
         },
         ["Sword"] = {
-            ["Enable"] = true,
-            ["Delay"] = 0.75,
+            ["Enable"] = false,
+            ["Delay"] = 0.5,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
                     ["HoldTime"] = 0.1,
-                    ["TimeToNextSkill"] = 0.25,
+                    ["TimeToNextSkill"] = 0,
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.1,
-                    ["TimeToNextSkill"] = 0.25,
+                    ["HoldTime"] = 0.2,
+                    ["TimeToNextSkill"] = 0,
                 },
             },
         },
         ["Gun"] = {
             ["Enable"] = true,
-            ["Delay"] = 2,
+            ["Delay"] = 1.5,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 1,
+                    ["HoldTime"] = 0,
                     ["TimeToNextSkill"] = 0,
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0.1,
+                    ["HoldTime"] = 0,
                     ["TimeToNextSkill"] = 0,
                 },
             },
