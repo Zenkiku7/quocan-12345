@@ -26,7 +26,7 @@ getgenv().Setting = {
     ["Hide Theme"] = true,
     ["3D Render Disable"] = true,
     ["Theme"] = {
-        ["Name"] = "Miko",--"Old", "Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
+        ["Name"] = "Raiden",--"Old", "Raiden","Ayaka","Hutao","Yelan","Miko","Nahida","Ganyu","Keqing","Nilou","Barbara","Zhongli","Layla"
         ["Custom"] = {
             ["Enable"] = false,
             ['char_size'] = UDim2.new(0.668, 0, 1.158, 0),
@@ -68,8 +68,8 @@ getgenv().Setting = {
         Words = { "Hacker", "Exploiter", "Scripter", "Script", "Hack"}
     },
     AutoConfigMelee = true,
-    AutoConfigSword = false,
-    AutoConfigFruit = false,
+    AutoConfigSword = true,
+    AutoConfigFruit = true,
     SwitchPlayerKeybind = "G", -- Except Y Keybind
     ["LimitServerHopTime"] ={ -- Only Hop After "Time" Seconds
         Enable = false,
@@ -123,7 +123,7 @@ getgenv().Setting = {
         ["AutoBuyRandomandStoreFruit"] = true,
         ["AutoBuySurprise"] = true,
     },
-    ["Invisible"] = true, -- Self Explain
+    ["Invisible"] = false, -- Self Explain
     ["IgnoreFriends"] = false, --Server Hop When Your friends in your server
     ["GunMethod"] = false, --Use Melee,Gun Will automaticly disable invisible for things
     ["GunMethodSetting"] = {
@@ -137,7 +137,7 @@ getgenv().Setting = {
         CustomIcon = false,
         Image = "sticker.png", -- The Path Is: W-azure/AutoBounty/Notify
     },
-    ["SpamSkill"] = false, -- Will use all skills as fast as possbile ignore holding skills
+    ["SpamSkill"] = true, -- Will use all skills as fast as possbile ignore holding skills
     ["Weapons"] = { -- Select Weapon, Self Explain
         ["Melee"] = {
             ["Enable"] = true,
@@ -145,7 +145,7 @@ getgenv().Setting = {
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 1.5,
+                    ["HoldTime"] = 0,
                     ["TimeToNextSkill"] = 0,
                 },
             [ "X"] = {
@@ -194,8 +194,8 @@ getgenv().Setting = {
             },
         },
         ["Sword"] = {
-            ["Enable"] = false,
-            ["Delay"] = 0.5,
+            ["Enable"] = true,
+            ["Delay"] = 1.5,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
@@ -211,16 +211,16 @@ getgenv().Setting = {
         },
         ["Gun"] = {
             ["Enable"] = true,
-            ["Delay"] = 1.5,
+            ["Delay"] = 0.5,
             ["Skills"] = {
                 ["Z"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["HoldTime"] = 0.1,
                     ["TimeToNextSkill"] = 0,
                 },
                 ["X"] = {
                     ["Enable"] = true,
-                    ["HoldTime"] = 0,
+                    ["HoldTime"] = 0.1,
                     ["TimeToNextSkill"] = 0,
                 },
             },
